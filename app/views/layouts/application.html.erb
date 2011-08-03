@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <body>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>The Rubyists</title>
+</head>
+<head>
+  <title>Rubyists</title>
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>The Rubyists</title>
+</head>
+<body>
+
+<div id="main_container">
+
+	<div id="header">
+    <div class="logo">
+   
+
+    </div>
+
+    </div>
+
+
+
+
+    <div id="main_content">
+
+    	<div class="center_content">
+
+            <div id="menu_tab">
+                    <ul class="menu">
+                         <li><%=link_to 'Home',rubyists_path, :class=> 'nav_selected' %></li>
+                         <li><%=link_to 'Rubyists',rubyists_path, :class=> 'nav' %></li>
+                    </ul>
+            </div>
+
+
+
+            <div class="welcome_block">
+            	
+
+                     <div class="prod_box">
+
+                    	
+                        <div class="welcome_details">
+
+
+<%= yield %>
+                    </div>
+
+
+            </div>
+
+
+            <div class="products">
+            
+            </div>
+
+
+            <div class="new_products">
+            		
+
+                    <div class="prod_box">
+
+                    	
+                    </div>
+
+
+                    <div class="prod_box">
+                    	
+
+                        <div class="prod_details">
+                        	
+                        </div>
+                    </div>
+
+
+            		<div class="clear"></div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+        
+    </div>
+
+</div>
+</body>
+</html>

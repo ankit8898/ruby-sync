@@ -1,0 +1,27 @@
+<h1>All Rubyists</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Experience</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rubyists.each do |rubyist| %>
+  <tr>
+    <td><%= rubyist.name %></td>
+    <td><%= rubyist.experience %></td>
+    <td><%= rubyist.description %></td>
+    <td><%= link_to 'Show', rubyist %></td>
+    <td><%= link_to 'Edit', edit_rubyist_path(rubyist) %></td>
+    <td><%= link_to 'Destroy', rubyist, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rubyist', new_rubyist_path %>

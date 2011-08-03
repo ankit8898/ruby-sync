@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @rubyist.name %>
+</p>
+
+<p>
+  <b>Experience:</b>
+  <%= @rubyist.experience %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @rubyist.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_rubyist_path(@rubyist) %> |
+<%= link_to 'Back', rubyists_path %>
